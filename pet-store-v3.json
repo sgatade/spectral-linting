@@ -7,11 +7,7 @@
       "name": "MIT"
     }
   },
-  "servers": [
-    {
-      "url": "http://petstore.swagger.io/v1"
-    }
-  ],
+  "servers": [],
   "paths": {
     "/pets": {
       "get": {
