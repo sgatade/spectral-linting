@@ -1,1 +1,15 @@
-extends: spectral:oas
+# extends: spectral:oas
+
+rules:
+  # Rule 110 : 'info' should contain API META Information - 'description'
+  must-have-description-in-info:
+    description: Ensures that all OpenAPIs have a information object description.
+    message: The info object should have a description.
+    given: "$.info"
+    severity: error
+    recommended: true
+    formats:
+      - oas3
+    then:
+      field: description
+      function: truthy
