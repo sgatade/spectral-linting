@@ -2,7 +2,7 @@
   "openapi": "3.0.0",
   "info": {
     "version": "1.0.0",
-    "title": "Swagger Petstore for Linting",
+    "title": "Swagger Petstore for Linting - Fix 1",
     "license": {
       "name": "MIT"
     }
@@ -13,9 +13,7 @@
       "get": {
         "summary": "List all pets",
         "operationId": "listPets",
-        "tags": [
-          "pets"
-        ],
+        "tags": ["pets"],
         "parameters": [
           {
             "name": "limit",
@@ -63,9 +61,7 @@
       "post": {
         "summary": "Create a pet",
         "operationId": "createPets",
-        "tags": [
-          "pets"
-        ],
+        "tags": ["pets"],
         "responses": {
           "201": {
             "description": "Null response"
@@ -87,9 +83,7 @@
       "get": {
         "summary": "Info for a specific pet",
         "operationId": "showPetById",
-        "tags": [
-          "pets"
-        ],
+        "tags": ["pets"],
         "parameters": [
           {
             "name": "petId",
@@ -130,10 +124,7 @@
     "schemas": {
       "Pet": {
         "type": "object",
-        "required": [
-          "id",
-          "name"
-        ],
+        "required": ["id", "name"],
         "properties": {
           "id": {
             "type": "integer",
@@ -156,10 +147,7 @@
       },
       "Error": {
         "type": "object",
-        "required": [
-          "code",
-          "message"
-        ],
+        "required": ["code", "message"],
         "properties": {
           "code": {
             "type": "integer",
