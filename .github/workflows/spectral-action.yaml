@@ -10,8 +10,9 @@ jobs:
     steps:
       # Check out the repository
       - uses: actions/checkout@v3
-
+            
       # Run Spectral
-      - uses: stoplightio/spectral-action@latest
+      - name: Spectral Linting
+        uses: stoplightio/spectral-action@v0.8.10
         with:
           file_glob: '*.json'
