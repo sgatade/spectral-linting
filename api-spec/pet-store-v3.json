@@ -10,11 +10,7 @@
       "name": "MIT"
     }
   },
-  "servers": [
-    {
-      "url": "www.google.com"
-    }
-  ],
+  "servers": [],
   "paths": {
     "/pets": {
       "get": {
