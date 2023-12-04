@@ -1,0 +1,12 @@
+{
+  "name": "spectral-linting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "spectral lint api-spec/*.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

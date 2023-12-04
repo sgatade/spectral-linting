@@ -2,7 +2,6 @@ name: Run Spectral on API Specs
 
 on:
   - pull_request
-  - workflow_dispatch
 
 jobs:
   build:
@@ -12,11 +11,8 @@ jobs:
       # Check out the repository
       - uses: actions/checkout@v3
 
-      - name: Show content
-        run: find .
-        
       # Run Spectral
       - name: Spectral Linting
         uses: stoplightio/spectral-action@v0.8.10
         with:
-          file_glob: '*.json'
+          file_glob: "api-spec/*.json"

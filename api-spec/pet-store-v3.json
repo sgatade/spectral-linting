@@ -4,11 +4,18 @@
     "version": "1.0.0",
     "title": "Swagger Petstore for Linting",
     "description": "This is my description...",
+    "contact": {
+      "name": "John Doe"
+    },
     "license": {
       "name": "MIT"
     }
   },
-  "servers": [],
+  "servers": [
+    {
+      "url": "www.google.com"
+    }
+  ],
   "paths": {
     "/pets": {
       "get": {
